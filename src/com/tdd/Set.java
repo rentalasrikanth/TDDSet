@@ -16,9 +16,8 @@ public class Set<T> {
 		isEmpty = false;
 	}
 
-	public Object size() {
-		// TODO Auto-generated method stub
-		return null;
+	public int size() {
+		return 0;
 	}
 
 }
