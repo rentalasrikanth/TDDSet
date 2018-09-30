@@ -12,6 +12,7 @@ public class SetTest {
 		
 		Set set = new Set();
 		assertEquals(true, set.isEmpty());
+		assertEquals(0, set.size());
 	}
 	
 	@Test
