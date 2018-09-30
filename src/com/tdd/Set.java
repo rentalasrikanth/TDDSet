@@ -11,7 +11,7 @@ public class Set<T> {
 	}
 
 	public boolean isEmpty() {
-		return isEmpty;
+		return (size == 0);
 	}
 
 	public void add(int i) {
