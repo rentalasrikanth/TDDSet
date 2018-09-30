@@ -20,9 +20,8 @@ public class Set<T> {
 		return size;
 	}
 
-	public Object contains(int i) {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean contains(int i) {
+		return false;
 	}
 
 }
