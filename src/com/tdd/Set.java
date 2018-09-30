@@ -1,14 +1,19 @@
 package com.tdd;
 
 public class Set<T> {
+	
+	boolean isEmpty;
+	Set()
+	{
+		isEmpty = true;
+	}
 
 	public boolean isEmpty() {
-		return true;
+		return isEmpty;
 	}
 
 	public void add(int i) {
-		// TODO Auto-generated method stub
-		
+		isEmpty = false;
 	}
 
 }
