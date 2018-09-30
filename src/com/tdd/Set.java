@@ -2,12 +2,13 @@ package com.tdd;
 
 public class Set<T> {
 
-	public Object isEmpty() {
+	public boolean isEmpty() {
 		return true;
 	}
 
-	public Object size() {
-		return 0;
+	public void add(int i) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
