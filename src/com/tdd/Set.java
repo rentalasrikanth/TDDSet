@@ -3,9 +3,11 @@ package com.tdd;
 public class Set<T> {
 	
 	boolean isEmpty;
+	int size;
 	Set()
 	{
 		isEmpty = true;
+		size = 0;
 	}
 
 	public boolean isEmpty() {
@@ -14,10 +16,11 @@ public class Set<T> {
 
 	public void add(int i) {
 		isEmpty = false;
+		size++;
 	}
 
 	public int size() {
-		return 0;
+		return size;
 	}
 
 }
