@@ -6,4 +6,9 @@ public class Set<T> {
 		return true;
 	}
 
+	public Object size() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

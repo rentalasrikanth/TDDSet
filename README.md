@@ -1,4 +1,7 @@
 # TDDSet
+
+Reference: https://www.youtube.com/watch?v=JQqtS6Rsi_o
+
 TDD implementation of a Set Interface using simple Java Arrays
 
 We will be implementing the following functionalities of a set:
