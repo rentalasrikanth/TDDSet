@@ -15,7 +15,7 @@ public class Set<T> {
 	}
 
 	public void add(int val) {
-		if(indexOf(val) == -1)
+		if(!contains(val))
 		{
 			array[size] = val;
 			size++;
