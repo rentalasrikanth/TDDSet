@@ -74,4 +74,16 @@ public class SetTest {
 		assertEquals(1, set.size());
 		assertTrue(set.contains(1));
 	}
+	
+	@Test
+	public void testSet_WithMoreElementsAddedtoSetThanCapacity() {
+		set.add(1);
+		set.add(2);
+		set.add(3);
+		set.add(4);
+		assertFalse(set.isEmpty());
+		assertEquals(1, set.size());
+		assertTrue(set.contains(1));
+	}
+	
 }

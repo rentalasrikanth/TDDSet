@@ -30,18 +30,8 @@ public class Set<T> {
 		index = indexOf(val);
 		
 		return (index != -1);
-			/*return false;
-		else
-			return true;*/
-		
-		/*for(int element : array)
-		{
-			if(element == val)
-				return true;
-		}
-		return false;*/
 	}
-	// [2,1,3,0,0] // [2, 1, 0, 0, 0]
+	
 	public void remove(int val) {
 		index = indexOf(val);
 		
@@ -50,24 +40,6 @@ public class Set<T> {
 		
 		array[index] = array[size-1];
 		size--;
-	
-		/*for(int element : array)
-		{
-			if(element == val)
-			{
-				array[index] = array[array.length -1]; // Moving the last element to the index where the element is being removed.
-				size--;
-				break;
-			}
-			index++;
-		}*/
-		
-		/*for(int element : array)
-		{
-			array[index] = array[index +1]; // Moving the next element to the index where the element is being removed.
-			index++;
-		}*/
-		//size--;
 	}
 	
 	public int indexOf(int val)
