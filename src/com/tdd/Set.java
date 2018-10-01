@@ -14,9 +14,12 @@ public class Set<T> {
 		return (size == 0);
 	}
 
-	public void add(int i) {
-		array[size] = i;
-		size++;
+	public void add(int val) {
+		if(indexOf(val) == -1)
+		{
+			array[size] = val;
+			size++;
+		}
 	}
 
 	public int size() {
