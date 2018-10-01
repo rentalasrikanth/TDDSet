@@ -64,6 +64,14 @@ public class SetTest {
 		assertTrue(set.contains(1));
 		assertFalse(set.contains(2));
 		assertTrue(set.contains(3));
-		
+	}
+	
+	@Test
+	public void testSet_WithTwoElementsAddedtoSetThatAreDuplicates() {
+		set.add(1);
+		set.add(1);
+		assertFalse(set.isEmpty());
+		assertEquals(1, set.size());
+		assertTrue(set.contains(1));
 	}
 }
