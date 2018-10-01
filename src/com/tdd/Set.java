@@ -14,6 +14,7 @@ public class Set<T> {
 	}
 
 	public void add(int i) {
+		array[size] = i;
 		size++;
 	}
 
@@ -22,6 +23,11 @@ public class Set<T> {
 	}
 
 	public boolean contains(int i) {
+		for(int element : array)
+		{
+			if(element == i)
+				return true;
+		}
 		return false;
 	}
 }

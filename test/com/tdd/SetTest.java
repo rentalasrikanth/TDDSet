@@ -27,7 +27,8 @@ public class SetTest {
 	public void testSet_WithOneElementAddedtoSet() {
 		set.add(1);
 		assertEquals(false, set.isEmpty());
-		//assertTrue(set.contains(1));
+		assertTrue(set.contains(1));
+		assertFalse(set.contains(2));
 	}
 
 	@Test
