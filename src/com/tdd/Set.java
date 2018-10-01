@@ -30,4 +30,9 @@ public class Set<T> {
 		}
 		return false;
 	}
+
+	public void remove(int i) {
+		// TODO Auto-generated method stub
+		
+	}
 }
