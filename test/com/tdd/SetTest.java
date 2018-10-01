@@ -47,4 +47,23 @@ public class SetTest {
 		assertTrue(set.contains(2));
 		
 	}
+	
+	@Test
+	public void testSet_WithThreeElementsAddedtoSet() {
+		set.add(1);
+		set.add(2);
+		set.add(3);
+		assertFalse(set.isEmpty());
+		assertTrue(set.contains(1));
+		assertTrue(set.contains(2));
+		assertTrue(set.contains(3));
+		
+		set.remove(2);
+		assertFalse(set.isEmpty());
+		assertEquals(2, set.size());
+		assertTrue(set.contains(1));
+		assertFalse(set.contains(2));
+		assertTrue(set.contains(3));
+		
+	}
 }
