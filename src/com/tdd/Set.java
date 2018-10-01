@@ -4,10 +4,12 @@ public class Set<T> {
 	int size;
 	int array[];
 	int index;
+	int capacity;
 	Set(int capacity)
 	{
 		size = index = 0;
 		array = new int[capacity];
+		this.capacity = capacity;
 	}
 
 	public boolean isEmpty() {
@@ -15,11 +17,27 @@ public class Set<T> {
 	}
 
 	public void add(int val) {
-		if(!contains(val))
-		{
-			array[size] = val;
-			size++;
-		}
+
+		if(contains(val)) return;
+		
+		if(full())
+			resize();
+		
+		array[size] = val;
+		size++;
+	}
+
+	private boolean full() {
+		return size == capacity;
+	}
+	
+	private void resize() {
+		int[] resizedArray = new int [capacity *2];
+		
+		for(int index = 0; index < array.length; index++)
+			resizedArray[index] = array[index];
+		
+		array = resizedArray;
 	}
 
 	public int size() {

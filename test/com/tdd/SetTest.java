@@ -82,7 +82,7 @@ public class SetTest {
 		set.add(3);
 		set.add(4);
 		assertFalse(set.isEmpty());
-		assertEquals(1, set.size());
+		assertEquals(4, set.size());
 		assertTrue(set.contains(1));
 	}
 	
